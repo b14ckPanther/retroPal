@@ -1,9 +1,8 @@
 'use client';
 
 import { useState } from 'react';
-import { games, getAllCategories, Game } from '@/lib/games';
+import { games, getAllCategories } from '@/lib/games';
 import GameGrid from '@/components/games/GameGrid';
-import { NeonButton } from '@/components/ui/NeonButton';
 
 type SortOption = 'name' | 'rating' | 'newest';
 

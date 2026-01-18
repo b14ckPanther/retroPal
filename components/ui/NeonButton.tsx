@@ -8,7 +8,7 @@ interface NeonButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 const NeonButton = forwardRef<HTMLButtonElement, NeonButtonProps>(
-  ({ className, variant = 'cyan', size = 'md', glow = true, children, ...props }, ref) => {
+  ({ className, variant = 'cyan', size = 'md', glow: _glow = true, children, ...props }, ref) => {
     const variantStyles = {
       cyan: 'border-neon-cyan text-neon-cyan hover:bg-neon-cyan hover:text-arcade-bg hover:shadow-neon-cyan',
       pink: 'border-neon-pink text-neon-pink hover:bg-neon-pink hover:text-arcade-bg hover:shadow-neon-pink',
